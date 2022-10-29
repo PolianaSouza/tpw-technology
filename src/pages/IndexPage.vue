@@ -7,5 +7,3 @@
 <script setup>
 import Destaques from "../components/Destaques/Destaques.vue";
 </script>
- 
-  components: { Destaques },

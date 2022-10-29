@@ -6,7 +6,7 @@
     </q-card>
     <q-card class="my-card text-center">
       <img src="src/assets/ImgDestaques/setup.png" alt="iniciando com front" />
-      <div class="text">Configurando seu setup</div>
+      <div class="text">Adriano</div>
     </q-card>
     <q-card class="my-card text-center">
       <img
