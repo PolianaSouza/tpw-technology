@@ -1,27 +1,27 @@
 <template>
   <q-layout view="hHh lpR fff">
-    <q-header bordered class="bg-primary text-white" height-hint="98">
-      <div class="row q-ml-md">
-        <q-toolbar class="col-md-7">
-          <q-toolbar-title>
-            <q-avatar>
-              <q-icon name="code" size="30px" />
-            </q-avatar>
-            TPW Technology
-          </q-toolbar-title>
-        </q-toolbar>
-        <search class="col-md-4" />
-        <div class="col q-mt-sm">
-          <q-icon name="account_circle" size="50px" color="white" />
-        </div>
+    <q-header bordered class="bg-primary text-white">
+      <q-toolbar class="text-center text-h5 flex justify-center items-center">
+        <q-avatar class="q-mr-md">
+          <q-icon name="code" size="40px" />
+        </q-avatar>
+        TPW Technology
+      </q-toolbar>
+      <div class="row">
+        <q-tabs
+          class="col-sm-8 col-md-8 col-lg-8"
+          inline-label
+          mobile-arrows
+          outside-arrows
+        >
+          <q-route-tab to="/" label="Home" />
+          <q-route-tab to="/categorias" label="Categorias" />
+          <q-route-tab to="/publicacoes" label="Publicações" />
+          <q-route-tab to="/sobre" label="Sobre nós" />
+          <q-route-tab to="/contato" label="Contate-nos" />
+        </q-tabs>
+        <search class="col-xs-11 col-sm-4 col-md-4 col-lg-4" />
       </div>
-      <q-tabs align="center">
-        <q-route-tab to="/" label="Home" />
-        <q-route-tab to="/categorias" label="Categorias" />
-        <q-route-tab to="/publicacoes" label="Publicações" />
-        <q-route-tab to="/sobre" label="Sobre nós" />
-        <q-route-tab to="/contato" label="Contate-nos" />
-      </q-tabs>
     </q-header>
 
     <q-page-container>

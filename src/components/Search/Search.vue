@@ -3,9 +3,10 @@
     <q-input
       v-model="pesquisar"
       debounce="500"
+      class="bg-white"
+      square
       filled
       dense
-      class="bg-white"
       placeholder="Pesquisar"
     >
       <template v-slot:append>
