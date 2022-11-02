@@ -2,31 +2,231 @@
   <div class="row items-center justify-center q-mb-sm">
     <h4 class="text-center">Destaques</h4>
   </div>
-  <div class="row items-center justify-center q-gutter-md">
-    <q-card class="my-card text-center" flat>
-      <img src="src/assets/ImgDestaques/duvida.png" alt="iniciando com front" />
-      <!-- <div class="text">Iniciando com Front-End</div> -->
-      <q-item clickable to="#" class="text"> Iniciando com Front-End </q-item>
-    </q-card>
-    <q-card class="my-card text-center" flat>
-      <img src="src/assets/ImgDestaques/setup.png" alt="iniciando com front" />
-      <q-item clickable to="#" class="text"> Configurando seu setup </q-item>
-    </q-card>
-    <q-card class="my-card text-center" flat>
-      <img
-        src="src/assets/ImgDestaques/cachorro.png"
-        alt="iniciando com front"
-      />
-      <q-item clickable to="#" class="text"> Dúvidas sobre Programação </q-item>
-    </q-card>
-    <q-card class="my-card text-center" flat>
-      <img src="src/assets/ImgDestaques/pc.png" alt="iniciando com front" />
-      <q-item clickable to="#" class="text"> Montando seu computador </q-item>
-    </q-card>
+  <div class="flex justify-center items-center">
+    <q-carousel
+      v-model="slide"
+      transition-prev="slide-right"
+      transition-next="slide-left"
+      swipeable
+      animated
+      control-color="primary"
+      navigation
+      padding
+      arrows
+      height="300px"
+      class="bg-grey-1 shadow-1 rounded-borders"
+    >
+      <q-carousel-slide :name="1" class="column no-wrap">
+        <div
+          class="
+            row
+            fit
+            justify-start
+            items-center
+            q-gutter-xs q-col-gutter
+            no-wrap
+          "
+        >
+          <q-card class="my-card text-center" flat>
+            <img
+              src="src/assets/ImgDestaques/duvida.png"
+              alt="iniciando com front"
+            />
+            <!-- <div class="text">Iniciando com Front-End</div> -->
+            <q-item clickable to="#" class="text">
+              Iniciando com Front-End
+            </q-item>
+          </q-card>
+
+          <q-card class="my-card text-center" flat>
+            <img
+              src="src/assets/ImgDestaques/setup.png"
+              alt="iniciando com front"
+            />
+            <q-item clickable to="#" class="text">
+              Configurando seu setup
+            </q-item>
+          </q-card>
+          <q-card class="my-card text-center" flat>
+            <img
+              src="src/assets/ImgDestaques/cachorro.png"
+              alt="iniciando com front"
+            />
+            <q-item clickable to="#" class="text">
+              Dúvidas sobre Programação
+            </q-item>
+          </q-card>
+          <q-card class="my-card text-center" flat>
+            <img
+              src="src/assets/ImgDestaques/pc.png"
+              alt="iniciando com front"
+            />
+            <q-item clickable to="#" class="text">
+              Montando seu computador
+            </q-item>
+          </q-card>
+        </div>
+      </q-carousel-slide>
+      <q-carousel-slide :name="2" class="column no-wrap">
+        <div
+          class="
+            row
+            fit
+            justify-start
+            items-center
+            q-gutter-xs q-col-gutter
+            no-wrap
+          "
+        >
+          <q-card class="my-card text-center" flat>
+            <img
+              src="src/assets/ImgDestaques/duvida.png"
+              alt="iniciando com front"
+            />
+            <!-- <div class="text">Iniciando com Front-End</div> -->
+            <q-item clickable to="#" class="text">
+              Iniciando com Front-End
+            </q-item>
+          </q-card>
+
+          <q-card class="my-card text-center" flat>
+            <img
+              src="src/assets/ImgDestaques/setup.png"
+              alt="iniciando com front"
+            />
+            <q-item clickable to="#" class="text">
+              Configurando seu setup
+            </q-item>
+          </q-card>
+          <q-card class="my-card text-center" flat>
+            <img
+              src="src/assets/ImgDestaques/cachorro.png"
+              alt="iniciando com front"
+            />
+            <q-item clickable to="#" class="text">
+              Dúvidas sobre Programação
+            </q-item>
+          </q-card>
+          <q-card class="my-card text-center" flat>
+            <img
+              src="src/assets/ImgDestaques/pc.png"
+              alt="iniciando com front"
+            />
+            <q-item clickable to="#" class="text">
+              Montando seu computador
+            </q-item>
+          </q-card>
+        </div>
+      </q-carousel-slide>
+      <q-carousel-slide :name="3" class="column no-wrap">
+        <div
+          class="
+            row
+            fit
+            justify-start
+            items-center
+            q-gutter-xs q-col-gutter
+            no-wrap
+          "
+        >
+          <q-card class="my-card text-center" flat>
+            <img
+              src="src/assets/ImgDestaques/duvida.png"
+              alt="iniciando com front"
+            />
+            <!-- <div class="text">Iniciando com Front-End</div> -->
+            <q-item clickable to="#" class="text">
+              Iniciando com Front-End
+            </q-item>
+          </q-card>
+
+          <q-card class="my-card text-center" flat>
+            <img
+              src="src/assets/ImgDestaques/setup.png"
+              alt="iniciando com front"
+            />
+            <q-item clickable to="#" class="text">
+              Configurando seu setup
+            </q-item>
+          </q-card>
+          <q-card class="my-card text-center" flat>
+            <img
+              src="src/assets/ImgDestaques/cachorro.png"
+              alt="iniciando com front"
+            />
+            <q-item clickable to="#" class="text">
+              Dúvidas sobre Programação
+            </q-item>
+          </q-card>
+          <q-card class="my-card text-center" flat>
+            <img
+              src="src/assets/ImgDestaques/pc.png"
+              alt="iniciando com front"
+            />
+            <q-item clickable to="#" class="text">
+              Montando seu computador
+            </q-item>
+          </q-card>
+        </div>
+      </q-carousel-slide>
+      <q-carousel-slide :name="4" class="column no-wrap">
+        <div
+          class="
+            row
+            fit
+            justify-start
+            items-center
+            q-gutter-xs q-col-gutter
+            no-wrap
+          "
+        >
+          <q-card class="my-card text-center" flat>
+            <img
+              src="src/assets/ImgDestaques/duvida.png"
+              alt="iniciando com front"
+            />
+            <!-- <div class="text">Iniciando com Front-End</div> -->
+            <q-item clickable to="#" class="text">
+              Iniciando com Front-End
+            </q-item>
+          </q-card>
+
+          <q-card class="my-card text-center" flat>
+            <img
+              src="src/assets/ImgDestaques/setup.png"
+              alt="iniciando com front"
+            />
+            <q-item clickable to="#" class="text">
+              Configurando seu setup
+            </q-item>
+          </q-card>
+          <q-card class="my-card text-center" flat>
+            <img
+              src="src/assets/ImgDestaques/cachorro.png"
+              alt="iniciando com front"
+            />
+            <q-item clickable to="#" class="text">
+              Dúvidas sobre Programação
+            </q-item>
+          </q-card>
+          <q-card class="my-card text-center" flat>
+            <img
+              src="src/assets/ImgDestaques/pc.png"
+              alt="iniciando com front"
+            />
+            <q-item clickable to="#" class="text">
+              Montando seu computador
+            </q-item>
+          </q-card>
+        </div>
+      </q-carousel-slide>
+    </q-carousel>
   </div>
 </template>
 
 <script setup>
+import { ref } from "vue";
+const slide = ref(1);
 </script>
 
 <style>
