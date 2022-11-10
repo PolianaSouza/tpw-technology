@@ -229,7 +229,7 @@ import { ref } from "vue";
 const slide = ref(1);
 </script>
 
-<style>
+<style scoped>
 .my-card {
   width: 100%;
   max-width: 150px;
