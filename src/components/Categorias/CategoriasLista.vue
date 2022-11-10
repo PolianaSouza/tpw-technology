@@ -3,14 +3,20 @@
     <h4 class="text-center">Categorias mais visitadas</h4>
   </div>
   <div class="q-pa-md flex flex-center">
-    <q-card class="my-card">
-      <q-list v-for="categoria in categorias" :key="categoria.id">
+    <q-card class="my-card flex flex-center" flat>
+      <q-list
+        v-for="categoria in categorias"
+        :key="categoria.id"
+        class="q-pa-sm"
+      >
         <q-item clickable v-ripple>
           <q-item-section avatar>
-            <q-icon :name="categoria.icone" color="orange-9" />
+            <q-icon :name="categoria.icone" color="orange-9" size="2em" />
           </q-item-section>
+
           <q-item-section> {{ categoria.nome }} </q-item-section>
         </q-item>
+        <q-separator color="purple-1" />
       </q-list>
     </q-card>
   </div>
