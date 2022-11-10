@@ -12,11 +12,11 @@ const routes = [
         path: "publicacoes",
         component: () => import("pages/Publicacoes/Publicacoes.vue"),
       },
-      { path: "sobre", component: () => import("pages/SobreNos/SobreNos.vue") },
-      {
-        path: "contato",
-        component: () => import("pages/Contato/Contato.vue"),
-      },
+      // { path: "sobre", component: () => import("pages/SobreNos/SobreNos.vue") },
+      // {
+      //   path: "contato",
+      //   component: () => import("pages/Contato/Contato.vue"),
+      // },
     ],
   },
 
