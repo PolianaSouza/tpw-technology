@@ -9,12 +9,11 @@
       transition-next="slide-left"
       swipeable
       animated
-      control-color="primary"
+      control-color="purple-10"
       navigation
       padding
       arrows
       height="300px"
-      class="bg-grey-1 shadow-1 rounded-borders"
     >
       <q-carousel-slide :name="1" class="column no-wrap">
         <div
