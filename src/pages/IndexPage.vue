@@ -1,17 +1,13 @@
 <template>
-  <q-page class="flex flex-center">
-    <img
-      alt="Quasar logo"
-      src="~assets/quasar-logo-vertical.svg"
-      style="width: 200px; height: 200px"
-    >
+  <q-page padding>
+    <destaques />
+    <categorias-lista />
+    <sobre />
   </q-page>
 </template>
 
-<script>
-import { defineComponent } from 'vue'
-
-export default defineComponent({
-  name: 'IndexPage'
-})
+<script setup>
+import Destaques from "../components/Destaques/Destaques.vue";
+import CategoriasLista from "../components/Categorias/CategoriasLista.vue";
+import Sobre from "../components/Sobre/Sobre.vue";
 </script>

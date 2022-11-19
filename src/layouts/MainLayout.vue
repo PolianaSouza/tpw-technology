@@ -1,116 +1,50 @@
 <template>
-  <q-layout view="lHh Lpr lFf">
-    <q-header elevated>
-      <q-toolbar>
-        <q-btn
-          flat
-          dense
-          round
-          icon="menu"
-          aria-label="Menu"
-          @click="toggleLeftDrawer"
-        />
-
-        <q-toolbar-title>
-          Quasar App
-        </q-toolbar-title>
-
-        <div>Quasar v{{ $q.version }}</div>
+  <q-layout view="hHh lpR fff">
+    <q-header bordered reveal class="bg-primary text-white">
+      <q-toolbar class="text-center text-h5 flex justify-center items-center">
+        <q-avatar class="q-mr-md">
+          <q-icon name="code" size="40px" />
+        </q-avatar>
+        TPW Technology
       </q-toolbar>
-    </q-header>
-
-    <q-drawer
-      v-model="leftDrawerOpen"
-      show-if-above
-      bordered
-    >
-      <q-list>
-        <q-item-label
-          header
+      <div class="row justify-between q-mx-sm">
+        <q-tabs
+          class="col-xs-12 col-sm-6 col-md-4 col-lg-3"
+          inline-label
+          mobile-arrows
+          outside-arrows
         >
-          Essential Links
-        </q-item-label>
-
-        <EssentialLink
-          v-for="link in essentialLinks"
-          :key="link.title"
-          v-bind="link"
-        />
-      </q-list>
-    </q-drawer>
+          <q-route-tab to="/" label="Home" />
+          <q-route-tab to="/categorias" label="Categorias" />
+          <q-route-tab to="/publicacoes" label="Publicações" />
+          <!-- <q-route-tab to="/sobre" label="Sobre nós" />
+          <q-route-tab to="/contato" label="Contate-nos" /> -->
+        </q-tabs>
+        <search class="col-xs-12 col-sm-6 col-md-5 col-lg-4" />
+      </div>
+    </q-header>
 
     <q-page-container>
       <router-view />
     </q-page-container>
+
+    <q-footer class="bg-primary text-white">
+      <footer-informacoes />
+      <q-toolbar>
+        <q-toolbar-title class="row flex justify-center q-gutter-md">
+          <div class="text-footer">Developed by TPW Technology @2022</div>
+        </q-toolbar-title>
+      </q-toolbar>
+    </q-footer>
   </q-layout>
 </template>
 
-<script>
-import { defineComponent, ref } from 'vue'
-import EssentialLink from 'components/EssentialLink.vue'
-
-const linksList = [
-  {
-    title: 'Docs',
-    caption: 'quasar.dev',
-    icon: 'school',
-    link: 'https://quasar.dev'
-  },
-  {
-    title: 'Github',
-    caption: 'github.com/quasarframework',
-    icon: 'code',
-    link: 'https://github.com/quasarframework'
-  },
-  {
-    title: 'Discord Chat Channel',
-    caption: 'chat.quasar.dev',
-    icon: 'chat',
-    link: 'https://chat.quasar.dev'
-  },
-  {
-    title: 'Forum',
-    caption: 'forum.quasar.dev',
-    icon: 'record_voice_over',
-    link: 'https://forum.quasar.dev'
-  },
-  {
-    title: 'Twitter',
-    caption: '@quasarframework',
-    icon: 'rss_feed',
-    link: 'https://twitter.quasar.dev'
-  },
-  {
-    title: 'Facebook',
-    caption: '@QuasarFramework',
-    icon: 'public',
-    link: 'https://facebook.quasar.dev'
-  },
-  {
-    title: 'Quasar Awesome',
-    caption: 'Community Quasar projects',
-    icon: 'favorite',
-    link: 'https://awesome.quasar.dev'
-  }
-]
-
-export default defineComponent({
-  name: 'MainLayout',
-
-  components: {
-    EssentialLink
-  },
-
-  setup () {
-    const leftDrawerOpen = ref(false)
-
-    return {
-      essentialLinks: linksList,
-      leftDrawerOpen,
-      toggleLeftDrawer () {
-        leftDrawerOpen.value = !leftDrawerOpen.value
-      }
-    }
-  }
-})
+<script setup>
+import Search from "../components/Search/Search.vue";
+import FooterInformacoes from "../components/Footer/FooterInformacoes.vue";
 </script>
+<style scoped>
+.text-footer {
+  font-size: 0.6em;
+}
+</style>
