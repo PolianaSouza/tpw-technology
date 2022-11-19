@@ -205,7 +205,7 @@
               alt="iniciando com front"
             />
             <q-item clickable to="#" class="text">
-              Dúvidas sobre Programação
+              Dúvidas sobre Programação teste
             </q-item>
           </q-card>
           <q-card class="my-card text-center" flat>
