@@ -1,8 +1,9 @@
 <template>
-  <h2>Bem vindo a página de Publicações</h2>
+  <categoria-escolha />
 </template>
 
 <script setup>
+import CategoriaEscolha from "src/components/publicacoes/CategoriaEscolha.vue";
 </script>
 
 <style>

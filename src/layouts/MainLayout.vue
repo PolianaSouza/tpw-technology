@@ -9,18 +9,18 @@
       </q-toolbar>
       <div class="row justify-between q-mx-sm">
         <q-tabs
-          class="col-xs-12 col-sm-6 col-md-4 col-lg-3"
+          class="col-xs-12 col-sm-6 col-md-5 col-lg-3"
           inline-label
           mobile-arrows
           outside-arrows
         >
           <q-route-tab to="/" label="Home" />
-          <q-route-tab to="/categorias" label="Categorias" />
+          <!-- <q-route-tab to="/categorias" label="Categorias" /> -->
           <q-route-tab to="/publicacoes" label="Publicações" />
-          <!-- <q-route-tab to="/sobre" label="Sobre nós" />
-          <q-route-tab to="/contato" label="Contate-nos" /> -->
+          <q-route-tab to="/sobre" label="Sobre nós" />
+          <q-route-tab to="/contato" label="Contate-nos" />
         </q-tabs>
-        <search class="col-xs-12 col-sm-6 col-md-5 col-lg-4" />
+        <search class="col-xs-12 col-sm-4 col-md-4 col-lg-4" />
       </div>
     </q-header>
 
@@ -42,6 +42,17 @@
 <script setup>
 import Search from "../components/Search/Search.vue";
 import FooterInformacoes from "../components/Footer/FooterInformacoes.vue";
+import { useRouter } from "vue-router";
+
+const router = useRouter();
+// const teste = router.params.id;
+// function rota(teste) {
+//   if (teste) {
+//     router.push(`/publicacoes/${teste}?`);
+//   } else {
+//     router.push("/publicacoes");
+//   }
+// }
 </script>
 <style scoped>
 .text-footer {

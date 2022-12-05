@@ -4,13 +4,18 @@ const routes = [
     component: () => import("layouts/MainLayout.vue"),
     children: [
       { path: "", component: () => import("pages/IndexPage.vue") },
-      {
-        path: "categorias",
-        component: () => import("pages/Categorias/Categorias.vue"),
-      },
+      // {
+      //   path: "categorias",
+      //   component: () => import("pages/Categorias/Categorias.vue"),
+      // },
       {
         path: "publicacoes",
         component: () => import("pages/Publicacoes/Publicacoes.vue"),
+      },
+      {
+        path: "publicacoes/:id",
+        component: () =>
+          import("../components/publicacoes/PublicacaoCategoria.vue"),
       },
       // { path: "sobre", component: () => import("pages/SobreNos/SobreNos.vue") },
       // {
